@@ -28,7 +28,10 @@ Ubuntu:
 	./block-walker ../tester/Backup.bkf
 
 Windows:
+	find the blockwalker.exe in test\Debug or test\Release and CD to that directory, then run
 
-	block-walker ..\tester\Backup.bkf
+	blockwalker.exe ..\..\tester\Backup.bkf
+
+you can test other mtf files as you want. 
 
 
