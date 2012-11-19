@@ -6,12 +6,19 @@ simple block-walker of mtf
 
 how to build
 ============
-Windows, Ubuntu:
+Ubuntu:
 
 	mkdir test
 	cd test
 	cmake ..
 	make
+Windows (VS):
+
+	mkdir test
+	cd test
+	cmake ..
+then block-walker.sln can you find, build it.
+
 
 how to test
 ===========
