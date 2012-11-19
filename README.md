@@ -25,7 +25,7 @@ how to test
 
 Ubuntu:
 
-	./block-walker ../tester/Backup.bkf
+	./blockwalker ../tester/Backup.bkf
 
 Windows:
 	find the blockwalker.exe in test\Debug or test\Release and CD to that directory, then run
