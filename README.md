@@ -17,7 +17,7 @@ Windows (VS):
 	mkdir test
 	cd test
 	cmake ..
-then block-walker.sln can you find, build it.
+then blockwalker.sln can you find, build it.
 
 
 how to test
