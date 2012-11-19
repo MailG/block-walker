@@ -25,7 +25,7 @@ typedef unsigned char    u_int8_t;
 
 typedef int     int32_t;
 typedef short   int16_t;
-typedef char    int8_t;
+typedef signed char    int8_t;
 #ifdef WIN32
   typedef __int64 int64_t; 
 #endif

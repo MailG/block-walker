@@ -1,9 +1,6 @@
 #ifndef READMTF_HEAD_
 #define READMTF_HEAD_
 #include <string>
-
-int readmtf(std::wstring mtffile);
-
 #include <iostream>
 #include <fstream>
 #include <memory>
@@ -16,10 +13,12 @@ int readmtf(std::wstring mtffile);
 
 #define DebugPrint(x) std::cout<<(x)<<"\n"
 
+int readmtf(std::string mtffile);
+
 inline void print_mtf_id(const int& type)
 {
 	char *ptr = (char*) &type;
-	printf("Type -- 0X%08lx -- %c%c%c%c\n",type, ptr[0],ptr[1],ptr[2],ptr[3]);   
+	printf("Type -- 0X%08x -- %c%c%c%c\n",type, ptr[0],ptr[1],ptr[2],ptr[3]);   
 }
 
 class StateManager;
@@ -87,7 +86,7 @@ public:
 	bool nextState();
 	int curStateType();
 public:
-	bool init(std::wstring filename);
+	bool init(std::string filename);
 	void uninit();
 protected:
 	std::ifstream m_file_buffer;

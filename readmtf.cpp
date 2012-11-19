@@ -174,7 +174,7 @@ StateManager::~StateManager()
 	delete m_state;
 }
 
-bool StateManager::init( std::wstring filename )
+bool StateManager::init( std::string filename )
 {
 	m_file_buffer.open(filename.c_str(),std::ios::binary);
 
@@ -220,7 +220,7 @@ int StateManager::curStateType()
 {
 	return this->m_state->myState();
 }
-int readmtf(std::wstring mtffile)
+int readmtf(std::string mtffile)
 {
 	std::cout<<std::hex;
 	StateManager statemgr;
