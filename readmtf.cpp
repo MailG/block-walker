@@ -233,8 +233,6 @@ int readmtf(std::string mtffile)
 	while(statemgr.nextState()){
 		if(MTF_FILE == statemgr.curStateType()){
 			filecount++;
-			if (filecount == 3679)
-				;
 		}
 	}
 	std::cout<<"total number of files is "<<std::dec<<filecount<<std::endl;
